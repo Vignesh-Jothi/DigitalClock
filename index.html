@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<title>Digital Clock</title>
+</head>
+<body>
+	<h1>The Digital Clock</h1>
+	<div class="container">
+		<div class="clock" id="clk">
+			<div class="col" id="day"></div>
+			<div class="col" id="hour"></div>
+			<div class="col col2">:</div>
+			<div class="col" id="min"></div>
+			<div class="col col2">:</div>
+			<div class="col" id="sec"></div>
+			<div class="row">Day</div>
+			<div class="row">Hours</div>
+			<div class="row"></div>
+			<div class="row">Minutes</div>
+			<div class="row"></div>
+			<div class="row">Seconds</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		setInterval(()=>{
+			const date = new Date();
+		const day = ["SUN","MON","TUE","WED","THU","FRI"," SAT"];
+		let hour = date.getHours();
+		let min = date.getMinutes();
+		let sec = date.getSeconds();
+		document.getElementById("day").innerHTML = (day[date.getDay()]);
+		document.getElementById("hour").innerHTML = (hour);
+		document.getElementById("min").innerHTML = (min);
+		document.getElementById("sec").innerHTML = (sec);
+	},1000)
+	</script>
+</body>
+</html>

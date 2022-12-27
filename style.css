@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+	padding: 0%;
+	margin: 0%;
+	box-sizing: border-box;
+
+}
+body{
+	background: linear-gradient(262deg, rgba(189,34,195,1) 0%, rgba(45,253,248,0.9) 100%);
+	background-size: 300% 300%;
+	animation: gradient 15s ease infinite;
+	font-family: 'Pacifico', cursive;
+}
+h1{
+	text-align: center;
+	font-size: 5rem;
+}
+.container{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	height: 50vh;
+	width: 100%;
+	font-family: 'Pacifico', cursive;
+}
+.clock{
+	display: grid;
+	gap: 10px;
+	grid-template-columns: auto auto auto auto auto auto;
+	height: 150px;
+	width: 60%;
+	padding: 10px 10px;
+	margin-right:-10px ;
+	border:5px solid black;
+	border-radius: 10px;
+	background-color: black;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.20) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.col{
+	height: 100px;
+	padding: 10px;
+	margin-top: -20px;
+	color: whitesmoke;
+	font-size: 5rem;
+}
+.col2{
+	color: rgba(255, 255, 255, .6);
+}
+.row{
+	color: rgba(255, 255, 255, .5);
+	display: flex;
+	justify-content: flex-end;
+}
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
